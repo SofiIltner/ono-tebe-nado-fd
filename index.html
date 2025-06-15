@@ -15,15 +15,15 @@
   <!--header-->
   <header class="header">
     <nav class="header__menu">
-      <ul class="header__links-list header__links-list-item_no-bullit">
-        <li class="header__links-list-item links-list-item">
-          <a class="header__link_active" href="#">главная</a>
+      <ul class="header__links-list">
+        <li class="links-list-item">
+          <a class="link link_active" href="#">главная</a>
         </li>
-        <li class="header__links-list-item links-list-item header__links-list-item_decorated">
-          <a class="header__link" href="#">посмотреть лоты</a>
+        <li class="links-list-item header__links-list-item_decorated">
+          <a class="link" href="#">посмотреть лоты</a>
         </li>
-        <li class="header__links-list-item links-list-item header__links-list-item_decorated">
-          <a class="header__link" href="#">об аукционе</a>
+        <li class="links-list-item header__links-list-item_decorated">
+          <a class="link" href="#">об аукционе</a>
         </li>
       </ul>
     </nav>
@@ -31,15 +31,15 @@
       <img src="./images/logo-black.svg" class="header__logo-image" alt="черное лого с надписью оно тебе надо">
     </a>
     <address class="address header__address">
-      <a href="tel:+99995555555" class="header__logo-address-tel contacts">
+      <a href="tel:+99995555555" class="address__link">
         +9 999 555 5555
       </a>
       <br>
-      <a href="mailto:mail@example.com" class="header__logo-address-mail contacts">
+      <a href="mailto:mail@example.com" class="address__link">
         info@sobaka.ge
       </a>
       <br>
-      наб. Принсенграхт 263- 265, Амстердам
+      <p>наб. Принсенграхт 263- 265, Амстердам</p>
     </address>
   </header>
 
@@ -57,7 +57,7 @@
         <p class="cover__description-text letter-spacing-extended">
           Аукцион вещей, в которые никто не верил
         </p>
-        <button class="bet-button">Сделать ставку</button>
+        <button class="bet-button" type="button">Сделать ставку</button>
       </div>
     </section>
 
@@ -124,7 +124,7 @@
     </section>
 
     <!--about-->
-    <section class="about about__column">
+    <section class="about">
       <div class="about__logo">
         <img class="about__logo-image" src="./images/logo-white.svg" alt="белое лого с надписью оно тебе надо">
       </div>
@@ -145,6 +145,7 @@
           представить современную культуру. Когда в эти вещи не верил никто,
           продолжали верить их создатели. И сейчас эти лоты стали культовыми.
         </p>
+        </div>
       </div>
     </section>
   </main>
@@ -152,43 +153,45 @@
   <!--footer-->
   <footer class="footer">
     <!--контакты-->
-    <address class="footer__address address">
-      <a href="tel:+99995555555" class="contacts"> +9 999 555 5555 </a>
+    <address class="address footer__address">
+      <a href="tel:+99995555555" class="address__link"> 
+        +9 999 555 5555 
+      </a>
       <br>
-      <a href="mailto:mail@example.com" class="contacts contacts-mail">
+      <a href="mailto:mail@example.com" class="address__link">
         info@sobaka.ge
       </a>
       <br>
-      наб. Принсенграхт 263- 265, Амстердам
+      <p>наб. Принсенграхт 263- 265, Амстердам</p>
     </address>
     <!--меню-->
     <nav class="footer__menu">
       <ul class="footer__menu-list">
-        <li class="footer__menu-list-item links-list-item">
-          <a class="footer__menu-link_active"  href="#">главная</a>
+        <li class=" links-list-item">
+          <a class="link link_active"  href="#">главная</a>
         </li>
-        <li class="footer__menu-list-item links-list-item">
-          <a class="footer__menu-link"  href="#">посмотреть лоты</a>
+        <li class="links-list-item">
+          <a class="link"  href="#">посмотреть лоты</a>
         </li>
-        <li class="footer__menu-list-item links-list-item">
-          <a class="footer__menu-link"  href="#">об аукционе</a>
+        <li class="links-list-item">
+          <a class="link"  href="#">об аукционе</a>
         </li>
       </ul>
     </nav>
     <!--ссылки на соц сети-->
     <ul class="footer__social-list">
-      <li class="footer__social-list-item links-list-item">
-        <a class="footer__social-link links-list-item"  href="#">
+      <li class="links-list-item">
+        <a href="#" target="_blank">
           <img src="./images/yt.svg" class="footer__social-icon" alt="иконка ютуба">
         </a>
       </li>
-      <li class="footer__social-list-item links-list-item">
-        <a class="footer__social-link"  href="#">
+      <li class="links-list-item">
+        <a href="#" target="_blank">
           <img src="./images/vk.svg" class="footer__social-icon" alt="иконка вконтакте">
         </a>
       </li>
-      <li class="footer__social-list-item links-list-item">
-        <a class="footer__social-link"  href="#">
+      <li class="links-list-item">
+        <a href="#" target="_blank">
           <img src="./images/pinterest.svg" class="footer__social-icon" alt="иконка инстаграма (запрещен на территории РФ)">
         </a>
       </li>

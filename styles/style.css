@@ -24,8 +24,12 @@
     list-style: circle;
 }
 
-.header__link {
+.link {
     border-bottom: 1px solid #000000;
+}
+
+.link_active {
+    border: none;
 }
 
 .header__logo-image {
@@ -46,7 +50,7 @@
     line-height: 24.3px;
 }
 
-.contacts {
+.address__link {
     text-decoration: none;
     border-bottom: 1px solid #000000;
 }
@@ -133,10 +137,11 @@
     padding: 0;
     text-transform: uppercase;
     width: 256px;
-    height: 51px;
+    min-height: 51px;
     font-weight: 500;
     font-size: 22px;
     line-height: 100%;
+    cursor: pointer;
 }
 
 /*  lots    */
@@ -224,7 +229,6 @@
     grid-template-columns: 334px auto;
     gap: 25px;
     margin: 0 24px;
-    min-height: 595px;
 }
 
 .about__logo {
@@ -258,9 +262,10 @@
     line-height: 24px;
 }
 
-.about__text:nth-child(2) {
+.about__text:not(:last-child) {
     margin-bottom: 24px;
 }
+
 
 /*  footer  */
 
@@ -287,10 +292,6 @@
     justify-content: center;
     align-items: center;
     gap: 4.8px;
-}
-
-.footer__menu-link {
-    border-bottom: 1px solid #000000;
 }
 
 .footer__social-list {
